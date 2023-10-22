@@ -1,0 +1,50 @@
+{
+  "name": "bem-classlist",
+  "packageManager": "yarn@3.6.4",
+  "main": "./umd/index.js",
+  "version": "0.1.0",
+  "module": "./es/index.js",
+  "types": "types",
+  "license": "MIT",
+  "author": {
+    "email": "breeze9527@gmail.com",
+    "name": "breeze9527"
+  },
+  "description": "A tool for generating bem-style class list",
+  "keywords": [
+    "javascript",
+    "js",
+    "bem",
+    "class",
+    "classlist",
+    "classname"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-typescript": "^7.23.2",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@types/jest": "^29.5.6",
+    "babel-jest": "^29.7.0",
+    "gulp": "^4.0.2",
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-terser": "^2.1.0",
+    "jest": "^29.7.0",
+    "rollup": "^4.1.4",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "clean": "rm -rf es umd types",
+    "build": "yarn clean && tsc && node ./scripts/build.mjs",
+    "test": "jest"
+  },
+  "files": [
+    "es",
+    "umd",
+    "types",
+    "README.md",
+    "README_zh.md",
+    "LICENSE"
+  ]
+}

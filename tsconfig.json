@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "strict": true,
+    "target": "ES6",
+    "module": "ES2015",
+    "moduleResolution": "Node",
+    "outDir": "es",
+    "declarationDir": "types"
+  },
+  "include": [
+    "src/*.ts"
+  ]
+}
